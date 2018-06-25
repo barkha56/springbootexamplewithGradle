@@ -1,0 +1,5 @@
+package com.gradle.example;
+
+public class HelloController {
+
+}

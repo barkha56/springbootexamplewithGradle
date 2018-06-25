@@ -1,0 +1,15 @@
+package sample;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class mainclass {
+	
+	public static void main(String[] args) {
+		Map<Object, String> makk = new HashMap<>();
+		makk.put(1, "sdasd");
+		makk.put(new String("1"), "sdasdf");
+		System.out.println(makk);
+	}
+
+}

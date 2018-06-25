@@ -1,0 +1,12 @@
+package sample;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class mainclass {
+	
+	public static void main(String[] args) {
+		Map<Object, String> makk = new HashMap<>();
+	}
+
+}

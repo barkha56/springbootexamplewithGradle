@@ -1,0 +1,15 @@
+package com;
+
+import java.util.List;
+
+import org.springframework.web.method.support.HandlerMethodArgumentResolver;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+public class UserResolverConfig extends WebMvcConfigurerAdapter {
+	@Override
+	public void addArgumentResolvers(List<HandlerMethodArgumentResolver> argumentResolvers) {
+		UserResolver user = new UserResolver();
+		argumentResolvers.add(user);
+
+	}
+}

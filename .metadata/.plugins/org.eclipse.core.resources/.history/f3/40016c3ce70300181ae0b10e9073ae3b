@@ -1,0 +1,11 @@
+package sample;
+
+import java.util.HashMap;
+
+public class mainclass {
+	
+	public static void main(String[] args) {
+		Map<Strin> makk = ne HashMap<K, V>();
+	}
+
+}

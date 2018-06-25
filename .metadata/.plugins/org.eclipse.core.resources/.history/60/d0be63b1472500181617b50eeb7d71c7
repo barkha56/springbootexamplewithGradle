@@ -1,0 +1,66 @@
+package sample;
+
+import java.util.Arrays;
+
+public class mainclass {
+
+	public static void main(String[] args) {
+		int[] a = new int[4];
+		a[0] = 1;
+		a[1] = 2;
+		a[2] = 3;
+		a[3] = 10;
+
+		int[] m = new int[4];
+		m[0] = 2;
+		m[1] = 3;
+		m[2] = 4;
+		m[3] = 5;
+       int[] ad = new int[2];
+       ad[0]= 1234;
+       int[] ad1 = new int[2];
+       ad1[0]= 2345;
+		int moves = minimumMoves(ad, ad1);
+		System.out.println(moves);
+
+	}
+
+	static int minimumMoves(int[] a, int[] m) {
+		int noOfMoves = 0;
+		for (int k = 0; k < a.length; k++) {
+			int length = (int) (Math.log10(a[k]) + 1);
+			char[] digits = Integer.toString(a[k]).toCharArray();
+			char[] digits1 = Integer.toString(m[k]).toCharArray();
+			for (int i = 0; i < digits.length; i++) {
+				if (digits[i] != digits1[i]) {
+					while (digits[i] != digits1[i]) {
+						noOfMoves++;
+					}
+
+				}
+				System.out.println("digit: " + digits[i]);
+			}
+//		    int[] myarr = new int[1];
+//		    myarr[0]=a[k];
+//		    int[] myarr1 = new int[1];
+//		    myarr1[0]=m[k];		    
+//		    
+//		   for (int i = 0; i < length; i++) {	
+//			   
+//				if (myarr[i] != myarr1[i]) {
+//					while (myarr1[i] - myarr1[i] != 0) {						
+//						noOfMoves++;
+//					}
+//
+//				}
+//			}
+		}
+		
+		
+		
+		
+		return noOfMoves;
+
+	}
+
+}
